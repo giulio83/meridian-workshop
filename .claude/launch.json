@@ -3,14 +3,14 @@
   "configurations": [
     {
       "name": "Vue 3 Frontend",
-      "runtimeExecutable": "npm",
-      "runtimeArgs": ["run", "dev"],
+      "runtimeExecutable": "bash",
+      "runtimeArgs": ["-c", "cd meridian-workshop/client && npm run dev"],
       "port": 3000
     },
     {
       "name": "FastAPI Backend",
-      "runtimeExecutable": "python",
-      "runtimeArgs": ["main.py"],
+      "runtimeExecutable": "bash",
+      "runtimeArgs": ["-c", "cd meridian-workshop/server && python3 main.py"],
       "port": 8001
     }
   ]
